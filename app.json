@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Ride-Ita",
+    "slug": "Ride-Ita",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Ride-Ita"
+}
