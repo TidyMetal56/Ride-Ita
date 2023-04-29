@@ -1,0 +1,75 @@
+import { extendTheme } from 'native-base';
+
+const styles = extendTheme({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  containerHome: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: 'white',
+  },
+  containerSign: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'white',
+
+  },
+  text: {
+    fontSize: 24,
+    color: 'blue',
+    marginBottom: 20,
+  },
+  buttonBlack: {
+    width: '95%',
+    backgroundColor: 'black',
+    borderRadius: 5,
+  },
+  buttonCian: {
+    width: '95%',
+    backgroundColor: '#024959',
+    borderRadius: 5,
+    textAlign: 'center'
+  },
+  container: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#007FA3',
+  },
+  verticalStack:{
+    width:'100%',
+    height:"100%",
+    space: 3,
+    alignItems:"center",
+    justifyContent:"center",
+  },
+  verticalStackHome:{
+    height:"100%",
+    alignItems:"center",
+    justifyContent:"center",
+  },
+  headings:{
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 5,
+    fontSize: 14,
+    color: '#374151',
+    fontWeight: "semibold",
+  
+  },
+  smallHeading:{
+    fontSize: 12,
+    color: '#374151',
+    
+    fontWeight: 'medium',
+  },
+
+
+});
+
+export default styles;
