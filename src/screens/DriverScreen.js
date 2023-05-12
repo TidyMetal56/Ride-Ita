@@ -90,6 +90,8 @@ const DriverScreen = ({ navigation }) => {
                             <HStack flex={1} space={5}>
                                 <Box flex={1}>
                                     <FormControl.Label>Time to arrive:</FormControl.Label>
+                                    <SelectTime></SelectTime>
+                              
                                 </Box>
 
                                 <Box flex={1}>

@@ -91,6 +91,7 @@ const PassengerScreen = ({ navigation }) => {
                             <HStack flex={1} space={2}>
                                 <Box flex={1}>
                                     <FormControl.Label>Start Trip at:</FormControl.Label>
+                                    <SelectTime></SelectTime>
                                 </Box>
 
                                 <Box flex={1}>
