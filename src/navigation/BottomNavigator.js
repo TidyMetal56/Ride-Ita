@@ -7,7 +7,8 @@ import HomeScreen from '../screens/HomeScreen';
 import { Ionicons } from '@expo/vector-icons';
 import ProfileScreen from '../screens/ProfileScreen';
 import ChatsScreen from '../screens/ChatsScreen';
-
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeStackNavigator from './HomeStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,11 +16,11 @@ const BottomTabNavigator = () => {
 
   return (
 
-    <Tab.Navigator initialRouteName={screen.home}>
+    <Tab.Navigator  initialRouteName={screen.home} screenOptions={{headerShown: false}}>
 
       <Tab.Screen
-        name={screen.home}
-        component={HomeScreen}
+        name={screen.homeStack}
+        component={HomeStackNavigator}
         options={{
           tabBarIcon: ({ focused, size }) => (
 
@@ -35,7 +36,7 @@ const BottomTabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name={screen.profile}
+        name={screen.chats}
         component={ChatsScreen}
         options={{
           tabBarIcon: ({ focused, size }) => (
@@ -53,23 +54,6 @@ const BottomTabNavigator = () => {
       />
 
 
-
-      <Tab.Screen
-        name={screen.history}
-        component={HistoryScreen}
-        options={{
-          tabBarIcon: ({ focused, size }) => (
-            <Ionicons name={focused ? 'time' : 'time-outline'}
-             size={size} 
-             color={focused ? '#024959' : 'gray'} />
-          ),
-          tabBarLabel: 'History',
-          tabBarLabelStyle:{
-            color: '#024959'
-          }
-        }}
-      />
-      
       <Tab.Screen
         name={screen.settings}
         component={SettingsScreen}
@@ -87,6 +71,22 @@ const BottomTabNavigator = () => {
         }}
       />
 
+
+      <Tab.Screen
+        name={screen.history}
+        component={HistoryScreen}
+        options={{
+          tabBarIcon: ({ focused, size }) => (
+            <Ionicons name={focused ? 'time' : 'time-outline'}
+             size={size} 
+             color={focused ? '#024959' : 'gray'} />
+          ),
+          tabBarLabel: 'History',
+          tabBarLabelStyle:{
+            color: '#024959'
+          }
+        }}
+      />
 
 
     </Tab.Navigator>
