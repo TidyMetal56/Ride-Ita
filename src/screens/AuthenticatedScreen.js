@@ -1,17 +1,31 @@
 import * as React from "react";
 import BottomTabNavigator from "../navigation/BottomNavigator";
-import { Button, VStack, Center, View } from "native-base";
+import { Button, VStack, Center, Box, Text } from "native-base";
 import styles from "../utils/styles";
 
 
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import screen from '../utils/screenNames';
+
+const Tab = createBottomTabNavigator();
+
+import SettingsScreen from '../screens/SettingsScreen';
+import HistoryScreen from '../screens/HistoryScreen';
+import HomeScreen from '../screens/HomeScreen';
+import ProfileScreen from '../screens/ProfileScreen';
+import ChatsScreen from '../screens/ChatsScreen';
+
 
 const AuthenticatedScreen = () => {
-  return (<>
-  <View  style={styles.containerHome} >
+  return (
+  <Box safeArea>
 
-    <BottomTabNavigator/> 
-    </View>
-    </>
+    {/* <BottomTabNavigator/>  */}
+
+    <Text>Usuario logeado</Text>
+
+  </Box>
   );
 };
 

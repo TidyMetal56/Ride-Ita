@@ -6,16 +6,18 @@ import { NavigationContainer } from '@react-navigation/native';
 // Stacks
 import AppStack from './src/navigation/AppStack';
 import { SafeAreaView } from "react-native";
-//tests
+
+// Safe area
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaProvider>
     <NavigationContainer>
         <NativeBaseProvider>
           <AppStack />
         </NativeBaseProvider>
     </NavigationContainer>
-    </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
