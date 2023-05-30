@@ -44,7 +44,7 @@ const SignUpScreen = ({ navigation }) => {
 
     onAuthStateChanged(auth, (user) => {
       if(user) {
-        navigation.navigate(screen.authenticated);
+        navigation.navigate(screen.homestack);
       }
     });
   }, [])

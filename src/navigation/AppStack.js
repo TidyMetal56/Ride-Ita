@@ -11,6 +11,7 @@ import AuthenticatedScreen from "../screens/AuthenticatedScreen";
 import StartScreen from "../screens/StartScreen";
 import SignUpScreen from "../screens/SignUpScreen";
 import LoginScreen from "../screens/LoginScreen"
+import HomeStackNavigator from "./HomeStack";
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +28,12 @@ const AppStack = () => {
         name={screen.authenticated}
         component={AuthenticatedScreen}
       />
+
+      <Stack.Screen
+        name={screen.homestack}
+        component={HomeStackNavigator}
+      />
+
     </Stack.Navigator>
   );
 };

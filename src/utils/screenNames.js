@@ -4,7 +4,7 @@ export default screen = {
     signUp: 'SignUp Screen',
     login: 'Login Screen',
     home: 'Home Screen',
-    homeStack:'Home Stack',
+    homestack:'Home Stack',
     settings: 'Settings Screen',
     history: 'History Screen',
     authenticated: 'Authenticated Screen',
@@ -15,6 +15,5 @@ export default screen = {
     trip:'Trip Screen',
     ride: 'Ride Screen',
     chat: 'Chat Screen'
-
 
 };

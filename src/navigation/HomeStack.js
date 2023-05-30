@@ -17,6 +17,7 @@ const HomeStackNavigator = () => {
        component={HomeScreen}
        options={{ headerLeft: null }} />
 
+
       <HomeStack.Screen name={screen.ride} component={RequestRideScreen} />
       <HomeStack.Screen name={screen.trip} component={RequestTripScreen} />
       <HomeStack.Screen name={screen.passenger} component={PassengerScreen} />

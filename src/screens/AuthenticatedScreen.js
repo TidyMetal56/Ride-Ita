@@ -16,6 +16,8 @@ import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import ChatsScreen from '../screens/ChatsScreen';
 
+import HomeStackNavigator from "../navigation/HomeStack";
+
 
 const AuthenticatedScreen = () => {
   return (
@@ -23,7 +25,7 @@ const AuthenticatedScreen = () => {
 
     {/* <BottomTabNavigator/>  */}
 
-    <Text>Usuario logeado</Text>
+    
 
   </Box>
   );

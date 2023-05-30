@@ -36,7 +36,7 @@ const LoginScreen = ({ navigation }) => {
       const user = userCredential.user;
       console.log(user);
 
-      navigation.navigate(screen.authenticated);
+      navigation.navigate(screen.homestack);
       
     })
     .catch((error) => {
