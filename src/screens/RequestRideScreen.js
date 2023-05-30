@@ -6,6 +6,7 @@ import MapImage from '../../assets/ImageMap.png';
 import { Pressable, TouchableOpacity } from 'react-native';
 import screen from '../utils/screenNames';
 import { StyleSheet } from 'react-native';
+import MapComponent from '../components/MapComponent';
 
 const RequestRideScreen = ({ navigation }) => {
 
@@ -38,14 +39,7 @@ const RequestRideScreen = ({ navigation }) => {
 
         <Box flex={2} borderWidth={1} width={'100%'}>
           <TouchableOpacity style={styles.button} onPress={onPressMapImage} flex={1} >
-            <Image
-              width={'100%'}
-              height={'100%'}
-              source={MapImage}
-              resizeMode="cover"
-              flex={1}
-              alt={'Map Image'}
-            />
+            <MapComponent/>
           </TouchableOpacity>
 
         </Box>

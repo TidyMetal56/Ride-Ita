@@ -39,15 +39,8 @@ const RequestTripScreen = ({ navigation }) => {
 
         <Box flex={2} borderWidth={1} width={'100%'}>
         <TouchableOpacity style={styles.button} onPress={onPressMapImage} flex={1} >
-            <Image
-              width={'100%'}
-              height={'100%'}
-              source={MapImage}
-              resizeMode="cover"
-              flex={1}
-              alt={'Map Image'}
-            />
-          </TouchableOpacity>
+          <MapComponent/>
+        </TouchableOpacity>
 
         </Box>
       </VStack>
